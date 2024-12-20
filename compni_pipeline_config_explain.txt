@@ -1,0 +1,39 @@
+Based on the configuration you provided, your company is using an **IoT Data Pipeline** architecture in Azure, where data from IoT devices is ingested, processed, and managed using a series of Azure services. The pipeline consists of the following key components:
+
+### 1. **Azure IoT Hub**:
+   - **Purpose**: Collects telemetry data from IoT devices.
+   - **Usage in the pipeline**: IoT Hub is responsible for receiving messages (measurements, alarms, events) from multiple IoT devices. It acts as the entry point to the pipeline.
+
+### 2. **Azure Event Hub**:
+   - **Purpose**: Handles high-throughput streaming and ingestion of data.
+   - **Usage in the pipeline**: The Azure IoT Hub routes messages to Azure Event Hub, which is partitioned into different Event Hubs for each message type (measurements, alarms, and events). Event Hub ensures the data is ingested in real-time and forwarded for further processing.
+
+### 3. **Azure Functions**:
+   - **Purpose**: Serverless compute to process data in real-time.
+   - **Usage in the pipeline**: Each Azure Function listens to a different Event Hub and processes the messages accordingly. The function performs tasks such as transformation, routing, or triggering further workflows based on the message type.
+
+### 4. **Azure Key Vault**:
+   - **Purpose**: Manages sensitive information such as secrets, keys, and connection strings.
+   - **Usage in the pipeline**: Azure Key Vault securely stores the secrets (like connection strings to the Event Hub) required by the Azure Functions. The pipeline uses Key Vault to manage credentials and ensure secure access.
+
+---
+
+### High-Level Pipeline Architecture:
+1. **IoT Devices → Azure IoT Hub**: Devices send telemetry data (e.g., measurements, alarms, events) to Azure IoT Hub. Each device type (measurements, alarms, events) is set up as a separate device in the IoT Hub.
+   
+2. **IoT Hub → Message Routing → Event Hub**: Messages from the IoT Hub are routed based on device IDs to different Event Hubs (each representing different message types). This is done through message routing and filtering using the `$connectionDeviceId` routing query.
+
+3. **Event Hub → Azure Functions**: Azure Functions are subscribed to specific Event Hubs and process the messages. Each Azure Function listens to a different Event Hub (one for measurements, one for alarms, and one for events). The Event Hub connection string is managed through the Azure Function’s configuration.
+
+4. **Azure Key Vault**: Key Vault is used to securely store the secrets and connection strings needed by the Azure Functions. The function app is granted access to the Key Vault through managed identity, ensuring secure access to the sensitive information.
+
+---
+
+### Summary:
+Your company's pipeline configuration consists of an **IoT-to-Event Hub-to-Azure Function** pipeline. Here's how the components work together:
+- **Azure IoT Hub** collects data from IoT devices and routes it based on message type (e.g., alarms, measurements).
+- **Azure Event Hub** ingests the routed messages for each type and stores them in separate Event Hubs.
+- **Azure Functions** are triggered based on the messages in each Event Hub to process the data in real-time.
+- **Azure Key Vault** securely stores secrets, ensuring that the pipeline remains secure and access to sensitive data is controlled.
+
+This architecture is designed to handle real-time data processing with scalability, security, and modularity using Azure’s serverless and cloud-native services.

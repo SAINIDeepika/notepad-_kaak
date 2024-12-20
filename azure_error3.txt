@@ -1,0 +1,32 @@
+User-Assigned Managed Identity
+
+Resource group
+bluehq_group
+Location
+West Europe
+Subscription
+Azure subscription 1
+Subscription ID
+9790c8b4-b481-4d56-aeff-856d6c0a32bc
+Type
+Microsoft.ManagedIdentity/userAssignedIdentities
+Client ID
+62c4ad19-58d9-4368-beb4-cc44d32637a2
+Object (principal) ID
+288a4422-c667-4ba4-b025-ab39977a1cc4
+
+
+
+
+
+
+in the key vault:i already Assigned the User-Assigned Managed Identity to the Key Vault which is mentioned below. i added this in Encryption Settings while creating adf instance. but still i am getting the same error:"operation failed. Encryption settings contain invalid parameters (Code: CMKInvalidParameters)"
+
+Key Vault Data Access Administrator (1)
+Resource
+user-assigned-manage-identity
+/subscriptions/9790c8b4-b481-4d56-aeff-856d6c0a32bc/resourcegroups/bluehq_group/providers/Microsoft.ManagedIdentity/userAssignedIdentities/user-assigned-manage-identity
+User-assigned Managed Identity
+Key Vault Data Access Administrator 
+This resource
+Add

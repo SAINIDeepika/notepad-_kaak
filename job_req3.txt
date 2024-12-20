@@ -1,0 +1,310 @@
+boking.com
+You have more than +7 years of professional experience as a Software Developer/Data Engineer and hold a degree in a quantitative field 
+You have built production data pipelines in the cloud, setting up data-lake and server-less solutions; ‌you have hands-on experience with schema design and data modeling. 
+You have experience designing systems E2E and knowledge of basic concepts (lb, db, caching, NoSQL, etc) 
+Proven knowledge of Python is required, Java/Scala will be a plus 
+Knowledge of Hadoop, Hive, Sqoop, MySQL imports, Oozie, Spark, CDC, Kafka, Cassandra, Airflow. 
+Experience with Data Warehousing and ETL/ELT pipelines 
+You are driven by petabytes of our data via MySQL, Hadoop, Cassandra, etc 
+Excellent communication skills - verbal and written 
+ 
+2.
+Strong problem-solving skills.
+Strong programming skills.
+A background in computer science, engineering, physics, mathematics, or an equivalent field.
+Experience with Scala or other functional languages.
+Proficiency in Big Data Technologies such as Apache Hadoop and Apache Spark.
+Familiarity with databases such as MongoDB, ArangoDB, Postgres, DynamoDB, or others.
+Experience in application development using frameworks like Spring, Angular, or equivalent.
+Knowledge of streaming technologies such as Apache Kafka or equivalent.
+Proficiency in cloud platforms, particularly AWS.
+Familiarity with containerization technologies like Docker, Kubernetes, OpenStack.
+Proficiency in Linux, Bash, version control tools, and continuous integration tools.
+
+3.
+SQL, NoSQL, key-value stores, document stores, and graph databases. Your goal is to deliver ingenious solutions that surpass expectations.
+Collaborate closely with the talented team to conceive, construct, optimize, scale, and maintain a cutting-edge data processing pipeline. By ensuring that it aligns seamlessly with their business requirements and caters to our stakeholders' needs, you will create an unrivaled foundation for success.
+Guarantee that the data sets are of the highest quality and can be effectively utilized by various stakeholders. Your meticulous attention to detail will be instrumental in delivering actionable insights that drive informed decision-making.
+Oversee and facilitate data acquisition and ingestion processes, working in tandem with our esteemed machine learning experts, data scientists, and business developers. By understanding their unique requirements, you will enable seamless collaboration and foster innovation.
+Provide indispensable guidance and unwavering support to the team, empowering them to deliver exceptional work. By ensuring they have the necessary resources and a nurturing environment, you will foster a culture of excellence.
+
+4.
+You have minimum 5 years’ experience as a Python software developer, with a strong emphasis on data engineering.
+You have demonstrated experience (2+ years) with commercial data ingestion (e.g., Data Factory, Fivetran, Trifacta), including ELT processes and data pipeline development.
+You have a minimum of 1 year of experience with Kafka or Azure EventsHub.
+You understand parquet and delta lake formats or have experience setting up data lakes from scratch.
+You have a Bachelor's or Master's degree in Computer Science or a related field.
+Experience with Databricks; Puurview, Atlan, or Apache Atlas; geospatial data; semantic web databases would be beneficial.
+
+5.
+You perform technical impact analysis based on the functional requirements;
+You design data flow and model according to our architecture standards;
+You take care of the extraction of internal and external source data;
+You apply logic to the data with Databricks and Python;
+You develop data pipelines for the purpose of Machine Learning;
+You support the data scientist in training machine learning models;
+You are an important point of contact for data issues for end users;
+You monitor and ensure continuous optimization of the (Azure) Data Platform architecture;
+You invest in your own development by attending relevant (online) training.
+
+6.
+Pay: 70-110 € per hour 
+
+ Python (senior level);
+* Docker;
+* Kubernetes;
+* Jenkins + ArgoCD (CICD tooling);
+* Requirement gathering and analysis;
+* (Relational) databases (Impala, Postgres, Oracle);
+* Git;
+It is an advantage if you have experience with:
+* Data visualization techniques (Tibco Spotfire, PowerBI)
+* Azure
+* Kafka
+* Object storage
+* Security in Data ETL
+* Scrum + DevOps
+
+7.
+5+ years' experience in data engineering with Azure Cloud
+Worked with Data Lakes, CI/CD pipelines and a DevOps environment
+Expert in Python, PySpark, testing and coding
+Experience in SQL, NoSQL and database designs
+Technical expertise in building data engineering solutions, scheduling and orchestration.
+Great team spirit that can work in an Agile way
+
+8.
+Go as main and Python as secondary programming language for development of tools, services and CLIs 
+GitHub and GitHub Actions
+Kubernetes and Docker
+Google Cloud Platform (GCP), e.g. BigQuery, IAM, Composer/Airflow, Cloud Functions, Pub/Sub and etc. 
+Data build tool (DBT)
+
+9. 
+5+ years of experience building data pipelines
+Knowledge of data warehousing platforms (Snowflake, Redshift, Bigquery, etc) including data transformation (dbt), data model design and query optimization strategies
+Proficiency with SQL
+Experience using data visualization tools, for example Looker, Tableau or Power BI
+Experience developing data-intensive services: Golang and/or Python a plus
+Strong written and verbal English communication skills
+
+10.
+€80 - €110 per hour
+
+11.
+at least 4 years of experience running data driven solutions, including deployment and management of data-pipelines in production. 
+strong Scala/Java/Kotlin experience, we would prefer someone with 2+ years hands-on experience, for at least one of the mentioned. 
+professional experience with Kafka, Azure EventHub, Pravega or Pulsar (we currently use Kafka). 
+professional experience with a data processing framework such as Spark, Flink, Beam, implementing both batch and streaming pipelines (we currently use Spark). 
+recognition of the importance of logging and monitoring (we currently use Splunk, OpenTelemetry). 
+at least one year experience with Microsoft Azure or another cloud provider. 
+comfort in working with the latest DevOps technologies i.e., Kubernetes, OpenShift, Docker, Helm, etc. 
+fluent speaking abilities in English. Knowledge of the Dutch language is a big plus. 
+
+12.
+You understand cloud, provisioning and automation. And you know how to build robust systems.
+As data engineer you are responsible for the implementation of the foundations of data-intensive systems. You develop enabling infrastructure to store, transform and process data at scale and in the cloud. You make sure that data is stored safe and secure using the technology that you see fit for the job.
+The Data Engineer role is a senior position with a central role in our clients' teams, and therefore we require at least 2 years of relevant professional experience. Having said that, we like to be amazed: so if you have done something outstanding during your studies, like contributing to open source projects or starting your own company, we encourage you to apply no matter what the level of your experience is.
+
+13.
+3 years experience as a Data Engineer
+Python & SQL 
+Azure or AWS or GCP
+Spark, Kafka
+DevOps principles
+PowerBI/Tableau
+Machine Learning/AI experience
+Dutch speaking
+
+14.
+3 years’ experience in Data engineering
+Experience & knowledge of Python & SQL or any other language for pipeline development.
+Have experience communicating clearly in both English & Dutch both in speech and writing.
+You have experience working on cloud platforms such as AWS, GCP and Azure.
+You have an affinity for digital analytics and data tools – Tableau, Data Studio, Google Analytics & Adobe.
+
+Responsibilities
+You will design, build, and maintain bespoke data pipelines and platforms that will help their projects
+progress and grow.
+You will design data architectures for our clients’ teams — primarily focused on digital marketing and
+sales data.
+You will be responsible for setting up a modern data stack (ETL, data warehouse, DBT, reverse ETL).
+You will be responsible for implementing cloud-based technologies.
+
+15.
+Hands-on experience managing and further developing distributed systems and clusters for both batch as well as streaming data (S3 and/or Kafka/ Flink ) 
+Experience in setting up and optimizing both SQL as well as noSQL databases 
+Experience with monitoring and observability (ELK stack) 
+Experience working in cloud environment ( e.g., Azure DevOps, GCP) 
+System design and architecture 
+Knowledge of MLOps architecture and practices 
+Agile wa y of working 
+Experience in stakeholders' management 
+Comfortable working in the international environment 
+ 
+16.
+You have at least 5 years of experience as a data/software engineer.
+You are an authority on (T-)SQL.
+You have experience with cloud services, preferably Azure .
+You have (hands-on) experience with CI/CD.
+You are fluent in the Dutch language both verbally and in writing.
+
+17.
+Identify the integration requirements of several data sources.
+Design, implement, and test cloud based (Azure) data intensive applications.
+Collaborate with Lead Engineers, Data Architects & Enterprise Architects for technical solutions.
+Help team members with technical questions, and 
+Coach junior team members.
+
+at least 4 years of experience running data driven solutions, including deployment and management of data-pipelines in production.
+strong Scala/Java/Kotlin experience, we would prefer someone with 2+ years hands-on experience, for at least one of the mentioned.
+professional experience with Kafka, Azure EventHub, Pravega or Pulsar (we currently use Kafka).
+professional experience with a data processing framework such as Spark, Flink, Beam, implementing both batch and streaming pipelines (we currently use Spark).
+recognition of the importance of logging and monitoring (we currently use Splunk, OpenTelemetry).
+at least one year experience with Microsoft Azure or another cloud provider.
+comfort in working with the latest DevOps technologies i.e., Kubernetes, OpenShift, Docker, Helm, etc.
+fluent speaking abilities in English. Knowledge of the Dutch language is a big plus. 
+
+18.
+You have at least 3 years of work experience in a similar role.
+You have extensive experience with SQL, Python and the Azure stack (including Azure Data Factory).
+You have demonstrable experience with data modeling.
+Your verbal and written command of Dutch is excellent.
+
+19.
+Snowflake, DBT, Databricks, Python, AWS, Terraform, Kafka, PySpark
+Minimum of three years of experience as a Data engineer;
+Experience with AWS cloud services;
+Experience with distributed computing frameworks such as PySpark or Snowflake;
+Experience implementing CI/CD pipelines and automated testing;
+Experience with SQL and relational databases.
+
+20.
+BSc/MSc in a relevant domain;
+At least 5 years' experience with SQL and Python;
+At least 2 years of experience with Events Hubs, Service Bus, Events Grid, or Kafka;
+Relevant experience (2+ years) with event streaming transformations and schema registry;
+Experience (5+years) with service integration: interoperability between systems;
+Experience with Databricks, Cloud environments (ideally Azure, but AWS or GCP is also fine), Terraform and CI/CD;
+Experience with services integration or BPMN is a plus;
+Full working proficiency in English.
+
+21.Extensive experience in data engineering, with a strong focus on software development and infrastructure.
+🔹 Proficiency in programming languages such as Python, Java, or Scala, along with expertise in SQL and data manipulation.
+🔹 Deep understanding of data warehousing concepts, ETL/ELT processes, and data modeling techniques. 🔹 Proven track record of building and maintaining large-scale data systems, utilizing cloud platforms like AWS, Azure, or GCP.
+🔹 Strong analytical and problem-solving skills, with the ability to translate complex requirements into scalable data solutions.
+🔹 Excellent communication and leadership abilities, fostering collaboration and driving innovation within your team.
+
+22.
+ Python | Data Warehouse | Data Lake | Data Management | Azure | Spark | Hadoop | RDMS | Data Modelling | Pandas | NumPy | PostgreSQL | ETL | Big Data | Database
+ 
+23.
+Have experience with SQL and Python
+Have completed an HBO or WO education
+have at least two years of experience in a data engineering work environment
+An excellent command of the Dutch and English languages
+Are driven, ambitious, eager to learn and proactive
+Have excellent communication skills
+
+24.
+Core Skills
+Bachelor or master degree in information technology, computer science, business administration or a related discipline.
+Certified in Agile Product Owner / SCRUM master and/or other Agile techniques Leadership Skills
+Have strong interpersonal, communication, facilitation and presentation skills. Is highly experienced in communicating with business at all levels.
+Comfortable to work with global stakeholders, internally and externally.
+Experience of working in a global business environment/different cultures.
+Ability to work under pressure with tight deadlines and balancing multiple priorities.
+Have strong interpersonal, communication, facilitation and presentation skills. Is highly experienced in communicating with business at all levels.
+Experience of working in a global business environment/different cultures and with global stakeholders.
+Technical Skills AWS Technical skills
+4yrs work experience in big data analytics
+2yrs AWS Devops
+5yrs Python • Experience in Airflow, PLSQL, PostgreSQL, pandas library
+Soft skills
+Team player, communicative and ability to work independently after full onboarding
+Source Code Control (e.g. Git, Subversion).
+Open Source Frameworks (Apache Spark, Hadoop etc.)
+Strong design and coding skills (e.g. Python, Scala, JavaScript).
+Experience with reporting/visualization tools (e.g. SAP Lumira/Design Studio, Spotfire, Power BI)
+Comfortable to work with global stakeholders, internally and externally.
+Experience with SAP technologies (SAP ECC/ERP, SAP BW, SAP HANA etc.)
+Experience with SQL-based technologies (e.g. MSSQL, MySQL, PostgreSQL).
+Experience with Restful API developments.
+Experience with data blending technology (e.g. Alteryx)
+Experience with Microsoft or AWS data stack e.g. Microsoft Azure Data Lake, Hadoop (preferably with Spark), Cosmos DB, HDInsight/HBase, MongoDB, Redis, Azure Table/Blob stores etc.
+Requirements/Experiences
+interpretation of data, highly analytical, troubleshooting and problem-solving skills.
+Experience with data architecture and design techniques (local/abstract).
+Experience with API techniques/developments.
+Experience with data transformation/blending technology (e.g. Alteryx is preferred).
+Experience with working concepts as data pipelining / data wrangling
+Experience with big data platforms; working with large data sets, large amounts of data in motion and numerous big data technologies.
+Agile Project Delivery techniques (e.g. SCRUM) & experience creating and using a wide range of scrum and agile artefacts and techniques, automated testing, personas, user stories, agile games etc
+Awareness of Agile Framework and its tools such as Visual Studio Team Services (VSTS) [completed by hiring manager]
+
+25.
+Minimum of 5 years of experience as a Data Engineer
+Extensive knowledge of data engineering tools and technologies, such as Python, SQL, ETL frameworks (e.g. Apache Spark), and cloud platforms (e.g. AWS, Azure, GCP)
+Experience designing and implementing data warehouses and data modeling
+Deep understanding of data architecture and data management best practices
+Strong analytical and problem-solving skills
+Good communication skills and ability to explain technical concepts to non-technical stakeholders
+Leadership skills and the ability to mentor and coach junior team members
+Passion for knowledge sharing and fostering a learning culture within the team
+
+26.
+Experience with any language (Scala, Python, Java...)
+Strong background in data engineering (Spark, Hadoop etc.)
+Exposure to Kafka and Kafka Streams
+Cloud experience (AWS, Azure, GCP)
+Strong English communication skills
+Desirable
+Understanding of software development
+Container experience with Docker / Kubernetes
+
+27.
+experience building data pipelines with Python in a cloud setup (AWS/Azure/GCP). It would also be nice if you have experience with containers and packaging code and building CI/CD for data products. Some nice-to-haves are Financial/AML knowledge, Privacy-preserving analytics, Secure (Multi-Party) Computation, and Knowledge of Hive Metastore.
+
+28.
+In this role, you will oversee designing, developing, and implementing ETL data pipelines that consume data from multiple sources, apply needed transformations and transfer the data to target systems. You will be responsible for developing and reviewing software solutions that are deployed in the Azure Cloud using a variety of technologies such as: ADLS, ADF, Databricks, Azure Functions, among others.
+
+You will be part of diverse Agile/Scrum DevOps team and have end-to-end responsibility, on behalf of the business and clients, for developing, managing, and maintaining functionalities in the Credit Risk Administration area, which are prioritised by the Product Owner.
+
+29.
+Development skills:
+ Profound Python (preferably certified) and willingness to learn Java and other programming languages
+ Linux and shell scripting knowledge
+ Basic experience in Java, Spring Boot, REST API (preferably)
+ PowerBI
+
+Ops skills:
+ Knowledge on designing and developing applications in the Azure Cloud
+ Strong experience in working with Azure in large scale environments (specifically: ADF, ADLS, Databricks, Azure Devops, etc.)
+
+Soft skills:
+ English proficiency
+ Working experience with Scrum/Agile principles
+ Good communicator.
+
+Banking experience, affinity with Data Science and Machine Learning are a big plus.
+
+30.
+Minimaal 5 jaar ervaring met PL/SQL (expert niveau), SQL en Oracle Forms
+Kennis en ervaring met Oracle Designer is een pré
+Goede kennis van Unix (scripting)
+Ervaring binnen Enterprise omgevingen
+Ervaring in Agile/Scrum omgevingen
+
+31.
+Analyze and understand user needs in terms of data collection, storage and enhancement.
+✅ Design and develop Big Data architectures and solutions, serving advanced Data Science uses.
+✅ Test architectures and developments. Check functional consistency of data in collaboration with business referents.
+✅ Produce software components, assemble them, make them available for production, ensure their behavior and relevance over time.
+✅ Contribute to analysis and prepare data.
+✅ Deploy the solution in a user acceptance environment and, eventually, in a production environment.
+
+
+Your profile
+You have a Bac+5 degree 🏫💼
+✅ With a background in decision-making, you have at least 2 years' experience, ideally with significant experience in an equivalent position.
+✅You have good skills in ETL Stambia, Teradata and in data viz: power BI

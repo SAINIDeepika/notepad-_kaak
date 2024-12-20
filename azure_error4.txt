@@ -1,0 +1,45 @@
+Based on the information you've provided, it looks like your **User-Assigned Managed Identity (UAMI)** currently has the **Key Vault Data Access Administrator** role. However, this role might not be sufficient for performing encryption operations such as wrapping and unwrapping keys. 
+
+### Steps to Fix the Issue:
+
+#### 1. **Assign the Proper Roles for Encryption**
+
+You should assign additional roles that specifically allow key management and cryptographic operations.
+
+1. **Add Key Vault Crypto User or Key Vault Contributor Role**:
+   - Go to the **IAM Role** page of the Key Vault.
+   - Click **+ Add** > **Add role assignment**.
+   - Under **Role**, select one of the following:
+     - **Key Vault Contributor** (provides full access to manage the Key Vault, including keys and secrets).
+     - **Key Vault Crypto User** (only allows key operations like wrap, unwrap, encrypt, and decrypt).
+   - **Assign to the User-Assigned Managed Identity**:
+     - Under **Assign access to**, select **Managed identity**.
+     - Search for and select your **User-Assigned Managed Identity**.
+   - Click **Review + assign** to complete the role assignment.
+
+#### 2. **Verify Current Permissions for User-Assigned Managed Identity**
+
+Make sure that the following permissions are available for the **User-Assigned Managed Identity** in your Key Vault:
+- **List**: Allows listing keys.
+- **Get**: Allows fetching the keys for encryption.
+- **Wrap/Unwrap Key**: Required for encryption and decryption operations.
+  
+The **Key Vault Crypto User** role covers these permissions, but you can also check this in **Key Vault** under **Permissions** for keys to ensure these operations are allowed.
+
+#### 3. **Retry the Azure Data Factory Creation**:
+
+Once you've assigned the correct roles, retry the creation of the Azure Data Factory instance. Ensure the following:
+- **Encryption settings** in the Data Factory setup reference the correct **Key Vault URL**.
+- The **User-Assigned Managed Identity** is selected and linked correctly.
+
+---
+
+### Summary:
+
+You should:
+- Assign either **Key Vault Contributor** or **Key Vault Crypto User** role to the **User-Assigned Managed Identity** for the Key Vault.
+- Ensure the managed identity has the correct permissions for key management (especially **wrap** and **unwrap** operations).
+- Retry the Azure Data Factory instance creation.
+
+These steps should fix the "CMKInvalidParameters" error by ensuring the identity has the necessary key permissions. Let me know if you need further assistance!
+

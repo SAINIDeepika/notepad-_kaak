@@ -1,0 +1,74 @@
+The error you're encountering, **"Encryption settings contain invalid parameters (Code: CMKInvalidParameters)"**, is related to permissions and configuration around the Key Vault and Customer-Managed Keys (CMK) that Azure Data Factory (ADF) uses. Specifically, the error suggests that the User-Assigned Managed Identity (UAMI) either doesn't have the correct Key Vault permissions or there might be a mismatch in configuration.
+
+To ensure that your User-Assigned Managed Identity (UAMI) has the correct permissions for accessing the Key Vault, follow these steps:
+
+### Step 1: Verify the Key Vault Access Policies for UAMI
+In Azure, the **Access Policies** section of your Key Vault defines the permissions for accessing keys, secrets, and certificates. For encryption and decryption purposes, the UAMI must have specific permissions.
+
+Here’s how you can verify that:
+
+#### 1.1 Check Key Vault Access Policies:
+1. Go to the **Azure Portal**.
+2. Navigate to your **Key Vault**.
+3. In the left-hand menu, click on **Access Policies**.
+4. Look for the **User-Assigned Managed Identity (UAMI)** you are using.
+5. Ensure the following key permissions are present:
+   - **List**: Allows listing the keys in the vault.
+   - **Get**: Allows fetching the key (required for encryption).
+   - **Wrap Key**: Required to wrap (encrypt) data.
+   - **Unwrap Key**: Required to unwrap (decrypt) data.
+
+   If these permissions are missing, follow these steps to add them:
+   - Click **Add Access Policy**.
+   - In the "Configure from template" section, choose "Key Management".
+   - In the **Permissions** for keys, ensure that **List**, **Get**, **Wrap Key**, and **Unwrap Key** are checked.
+   - Under **Select principal**, search and select the User-Assigned Managed Identity.
+   - Save the changes.
+
+#### 1.2 Check Key Vault Role Assignments (RBAC):
+Make sure that the **Key Vault Contributor** and **Key Vault Data Access Administrator** roles are assigned correctly, but note that **Access Policies** are the primary method for Key Vault access control in this case. Double-check these roles in the **Access Control (IAM)** section for completeness.
+
+### Step 2: Verify Key Vault Access via UAMI in ADF
+
+#### 2.1 Check if ADF is using the correct UAMI:
+1. Go to the **Azure Data Factory** instance in the Azure Portal.
+2. In the left-hand pane, navigate to **Managed Identity**.
+3. Ensure the **User-Assigned Managed Identity** is enabled and listed there.
+
+#### 2.2 Verify Encryption Settings:
+1. In the ADF instance, go to **Encryption Settings**.
+2. Check that the **Key URI** (the identifier for the encryption key in the Key Vault) is correctly specified and points to a valid key.
+3. Ensure that the UAMI is configured to access this specific key within the Key Vault.
+
+### Step 3: Test the UAMI Permissions
+To ensure the UAMI has the right access, you can use Azure CLI or PowerShell to perform actions such as listing and fetching the key.
+
+#### 3.1 Test with Azure CLI:
+```bash
+# Sign in with UAMI
+az login --identity --username <UAMI-ID>
+
+# Try to list keys in the Key Vault
+az keyvault key list --vault-name <YourKeyVaultName>
+
+# Try to fetch the specific key
+az keyvault key show --vault-name <YourKeyVaultName> --name <YourKeyName>
+```
+
+#### 3.2 Test with Azure PowerShell:
+```powershell
+# Authenticate with UAMI
+Connect-AzAccount -Identity
+
+# List keys in the Key Vault
+Get-AzKeyVaultKey -VaultName "<YourKeyVaultName>"
+
+# Fetch a specific key
+Get-AzKeyVaultKey -VaultName "<YourKeyVaultName>" -Name "<YourKeyName>"
+```
+
+### Step 4: Debug Further
+- If you see no issues in permissions but still get the error, check the Key Vault’s **Azure Diagnostics Logs** for any failed access attempts. This might provide more detailed error information.
+- Additionally, check if the key itself has any restrictions or policies that might prevent access.
+
+By following these steps, you should be able to verify whether the User-Assigned Managed Identity has the correct permissions for accessing the Key Vault and the Customer-Managed Key (CMK). This will likely resolve the `CMKInvalidParameters` error.

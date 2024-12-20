@@ -1,0 +1,106 @@
+3days
+AWS cloud services,Cloud native concepts (IaaS, PaaS, SaaS)==12-15hrs
+aws Cloud environments=3hrs
+AWS Terraform==5hrs,
+AWS Technical skills==2hrs,
+
+13days
+Azure is easy to learn if you already know AWS for many reasons: Basic architecture concepts are the same across all the cloud vendors. Cloud native concepts (IaaS, PaaS, SaaS) are the same across all cloud vendors. Both Azure and AWS have a similar set of services and infrastructure.
+
+Azure Events Hubs==6hrs, 
+Service Bus==3hrs, 
+Events Grid==4hrs, 
+event streaming transformations and schema registry==3hrs,
+Pravega==1hr
+Pulsar==2hrs
+
+azure Databricks==4hrs, 
+azure Data Lake, azure Data Lake storage==2-3hrs, 
+azure Data Factory==12hrs,
+azure functions==6hrs,
+etl architecture in azure context==3hrs
+-batch as well as streaming technologies- 3hrs
+Apache Kafka==6hrs/S3==2hrs/Apache Flink==3hrs/Apache Beam==3hrs
+
+MICROSOFT CERTIFIED:
+The AZ-900 certification is more suitable for those interested in cloud administration, architecture, or engineering, while the DP-900 certification is more suitable for those interested in data analytics or data engineering.
+
+Azure Fundamentals (exam_name=AZ-900)==4hrs
+Microsoft Certified: Azure Data Fundamentals (DP-900)==6hrs
+Microsoft Certified: Azure Data Engineer Associate (DP-203) ==17hrs
+Azure Solutions Architect Expert exam-(exam_name=AZ-305)==31hrs tutorial
+ADLS2==5hrs
+Azure DevOps==26hrs
+
+4days
+Python=2hrs,
+oops=3hrs,
+pandas=3hrs,
+NumPy=3hrs
+Python array with loops=2hrs 
+Python Algorithms=5hrs
+Machine Learning=12hrs
+AI experience=12hrs
+
+7days
+Data blending technology (e.g. Alteryx)==4hrs
+DBT,Data build tool (DBT)==2hrs
+Databricks vs azure databricks=3hrs,
+Data Warehouse in both aws nd azure=3hrs, 
+Data Lake in both aws nd azure=3hrs,
+Data Management,setting up data lakes from scratch in both aws nd azure=5hrs, 
+azure Purview=1hr, 
+Atlan, or Apache Atlas=1hr; 
+geospatial data=1hr; 
+semantic web databases=1hr
+data pipelining / data wrangling=3hrs
+pipelines in cloud(elt,etl)=3hrs
+commercial data ingestion (e.g., Data Factory, Fivetran, Trifacta), including ELT processes, data pipeline development=3hrs
+ETL,CI/CD,pipelines for Machine Learning=2hrs
+Jenkins=30mins
+ArgoCD (CICD tooling)=1hr
+Stambia=30min
+Teradata=30min
+DevOps environment=30min
+
+big data analytics,Big Data Technologies --- 
+Apache Hadoop=12hrs and 
+Apache Spark, PySpark=8hrs,
+kafka=2hr
+
+data warehousing platforms ---
+Snowflake=2hr 
+aws Redshift=2hrs
+Bigquery=1hr
+
+Google Cloud Platform (GCP) ---
+BigQuery=1hr
+IAM=1hr
+Composer/Airflow=1hr
+cloud Functions=1hr
+Pub/Sub=1hr
+
+scala=5hr
+
+2days
+data tools – Tableau,Power BI Data Studio, Google Analytics, Adobe, Tibco Spotfire, PowerBI =24hrs
+
+1day
+-PLSQL=1hr,RDMS, Data Modelling,(Relational) databases=1hr,Cassandra=1hr
+-basic concepts (MongoDB, ArangoDB, Postgres, DynamoDB)=2hrs
+-PostgreSQL,MSSQL, MySQL, PostgreSQL,(T-)SQL=3hrs
+-basic concepts (lb, db, caching, NoSQL,key-value stores, document stores, and graph databases)=3hrs
+
+4days
+DevOps technologies---
+Kubernetes=12hrs
+openShift=1hr
+Docker=6hr
+Helm=30min
+
+Source Code Control (e.g. Git, Subversion),Proficiency in Linux, Bash,GitHub and GitHub Actions=3hrs
+containerization technologies like Docker, Kubernetes, OpenStack=1hr
+Scrum=4hrs
+Restful API developments=12hrs
+
+4.5months 3-4hrs/day

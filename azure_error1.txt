@@ -1,0 +1,89 @@
+The error **"Encryption settings contain invalid parameters (Code: CMKInvalidParameters)"** indicates that there is still an issue with the configuration of the encryption settings. Since you've already assigned the **User-Assigned Managed Identity (UAMI)** to the Key Vault and granted it the appropriate role, we’ll need to ensure that other potential issues are addressed.
+
+### Here's a detailed checklist to ensure everything is set up correctly:
+
+---
+
+### 1. **Double-Check Key Vault Access Permissions**
+
+Make sure the **User-Assigned Managed Identity** has **Key Management** permissions in the Key Vault. The **Key Vault Data Access Administrator** role may not be sufficient for key operations (like encrypting/decrypting) required for Azure Data Factory. You need to grant **specific permissions for key access**:
+
+1. **Key Vault IAM Role**:
+   - Ensure that the **User-Assigned Managed Identity** has been assigned either:
+     - **Key Vault Contributor** (full access to manage keys, including encryption/decryption).
+     - **Key Vault Crypto User** (permissions to encrypt/decrypt with the key).
+     - **Key Vault Administrator** (full permissions, including keys and secrets).
+   - The **Key Vault Data Access Administrator** role is typically not sufficient for key encryption tasks.
+
+2. **Key-Specific Permissions**:
+   - If possible, assign the following permissions **directly to the key** using **Key Vault Access Policies** (if using Access Policies instead of RBAC):
+     - **Get**: Allows Data Factory to retrieve the encryption key.
+     - **Wrap Key / Unwrap Key**: Required for encryption and decryption.
+     - **List**: To view the key.
+
+3. **Verify Key Vault Access Policies** (if applicable):
+   - Even though you're using **RBAC**, if your Key Vault is configured to use **Access Policies** instead of RBAC, ensure the following permissions:
+     - **Key Permissions**: Select **Get, List, Wrap Key, and Unwrap Key**.
+     - Assign these permissions to the **User-Assigned Managed Identity**.
+   - Go to your Key Vault > **Access policies** > **Add access policy** > **Select principal** and choose your **User-Assigned Managed Identity**.
+
+---
+
+### 2. **Check Key Vault URL in Encryption Settings**
+
+Ensure that the Key Vault URL entered in the **Encryption Settings** is correctly formatted. It should look like this:
+```
+https://<your-key-vault-name>.vault.azure.net/
+```
+
+- Ensure there are **no trailing spaces** or extra characters in the URL.
+- Make sure the **key version** is specified correctly if you're using a specific version of the key.
+
+---
+
+### 3. **Verify the Key is Enabled and Exists**
+
+Go to the **Keys** section of your Key Vault and verify that:
+- The key you want to use for encryption is listed and **enabled**.
+- The key is in the correct **RSA format** (which is usually required for encryption).
+- If you're using a specific version of the key, ensure that version is still active.
+
+---
+
+### 4. **Check Key Vault Network Configuration**
+
+If your **Key Vault** has firewall rules or **Virtual Network (VNet) integration** enabled, ensure that:
+- **Azure Data Factory** can access the Key Vault.
+- If the Key Vault is restricted to a specific network, ensure that Data Factory is part of the allowed VNet or has been granted **exceptions**.
+
+---
+
+### 5. **Test the Access Manually**
+
+To confirm that the **User-Assigned Managed Identity** has access to the Key Vault, you can test it using **Azure CLI** or **Azure PowerShell**.
+
+1. Open **Cloud Shell** in the Azure Portal.
+2. Run the following command to check if the **User-Assigned Managed Identity** can access the Key Vault key:
+
+```bash
+az keyvault key show --vault-name <your-key-vault-name> --name <your-key-name> --subscription <your-subscription-id>
+```
+
+If the key is returned without any access error, then the identity has the correct permissions. Otherwise, you will see an error indicating what permissions are missing.
+
+---
+
+### 6. **Review the Key Vault Configuration for CMK**
+
+If all the above checks are correct and the problem persists, it could be related to the specifics of the **Customer Managed Key (CMK)** configuration. Ensure the following:
+- **CMK is correctly configured** in the Key Vault.
+- The **Data Factory region** and **Key Vault region** are the same (recommended for performance and compliance).
+- You’re not using an unsupported key version or format (e.g., unsupported elliptic curve keys).
+
+---
+
+### Final Steps:
+After verifying all these settings and making sure the **User-Assigned Managed Identity** has the correct permissions and access to the Key Vault, retry creating your Azure Data Factory instance with the Customer Managed Key (CMK) settings.
+
+If the issue persists, please let me know which specific step caused difficulty or if you receive a different error message during the redeployment. This will help narrow down the root cause.
+

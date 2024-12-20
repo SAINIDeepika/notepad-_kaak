@@ -1,0 +1,66 @@
+Since your **Azure Data Factory (ADF) instance deployment has failed** due to the "Encryption settings contain invalid parameters (Code: CMKInvalidParameters)" error, you won’t be able to associate the **User-Assigned Managed Identity (UAMI)** directly through the ADF instance until the deployment succeeds. Instead, you can handle the configuration outside of the ADF instance itself.
+
+Here are the steps you should follow to resolve the error by using the **User-Assigned Managed Identity** for Azure Data Factory and fixing the **Key Vault** access issue:
+
+---
+
+### Step 1: Assign the User-Assigned Managed Identity to the Key Vault
+
+1. **Go to the Key Vault**:
+   - Open your **Azure Key Vault** in the Azure portal.
+
+2. **Access Control (IAM)** for Key Vault:
+   - In the Key Vault’s sidebar, go to **Access Control (IAM)**.
+
+3. **Add Role Assignment**:
+   - Click **+ Add** and choose **Add role assignment**.
+   - In the role selection, choose either:
+     - **Key Vault Administrator** (Full control over Key Vault, including keys and secrets).
+     - **Key Vault Reader** (Only has read access to keys and secrets, sufficient for accessing keys for encryption).
+   
+4. **Assign the Role to the User-Assigned Managed Identity**:
+   - Under **Assign access to**, select **Managed identity**.
+   - In the **Select managed identity** section, choose the **User-Assigned Managed Identity** that you created earlier.
+   - Click **Review + assign**.
+
+---
+
+### Step 2: Redeploy Azure Data Factory with User-Assigned Managed Identity
+
+Now that the Key Vault access issue is handled, we’ll proceed to deploy Azure Data Factory (ADF) with the **User-Assigned Managed Identity (UAMI)** to manage the encryption key from Key Vault.
+
+1. **Create a New Azure Data Factory Instance**:
+   - In the Azure portal, navigate to **Azure Data Factory** and click **+ Create**.
+
+2. **Fill in Basic Settings**:
+   - Select your **Subscription** and **Resource Group** (bluehq_group).
+   - Provide a name for your Data Factory instance and choose the appropriate **Region** (e.g., **West Europe**).
+
+3. **Networking** (Optional):
+   - Set up any virtual network or private endpoint if needed (can be skipped for now).
+
+4. **Select User-Assigned Managed Identity**:
+   - In the **Managed Identity** section:
+     - Choose **User-Assigned Managed Identity** and select the one you created earlier (which has access to the Key Vault).
+   
+5. **Encryption Settings**:
+   - In the **Encryption** section, enable **Customer Managed Key (CMK)** and provide the **Key Vault URL** where the encryption key is stored.
+   - Since your user-assigned managed identity already has access to the Key Vault, this should resolve the encryption-related error.
+
+6. **Review + Create**:
+   - Review the settings and click **Create** to redeploy your Data Factory instance.
+
+---
+
+### Step 3: Verify the Deployment
+
+After the deployment succeeds, go back to the **Azure Key Vault** and verify that the Azure Data Factory can access the encryption keys as required.
+
+---
+
+### Summary
+
+- You have assigned your **User-Assigned Managed Identity (UAMI)** to the **Key Vault** with the correct permissions.
+- You redeployed the Azure Data Factory instance and linked it to the **User-Assigned Managed Identity**, resolving the encryption settings error.
+
+This approach should resolve the **CMKInvalidParameters** error and successfully deploy your Data Factory instance. If you encounter any further issues, let me know!

@@ -1,0 +1,141 @@
+0	nul
+1	een
+2	twee
+3	drie
+4	vier
+5	vijf
+6	zes
+7	zeven
+8	acht
+9	negen
+10	tien
+11	elf
+12	twaalf
+13	dertien
+14	veertien
+15	vijftien
+16	zestien
+17	zeventien
+18	achttien
+19	negentien
+20	twintig
+21	eenentwintig
+22	tweeëntwintig
+30	dertig
+40	veertig
+50	vijftig
+60	zestig
+70	zeventig
+80	tachtig
+90	negentig
+100	honderd
+200	tweehonderd
+578	vijfhonderd achtenzeventig
+1000	duizend
+1125	elfhonderd vijfentwintig
+1 000 000	een miljoen
+
+Letter	Letter name	Pronunciation tips
+A	ah	as in bad or bath
+B	bay	changes from a b sound to a p sound at the end of a word, as in web (web, pronounced “wehp”)
+C	say	makes an s sound before i, e, and y; makes a k sound before consonants and a, o, u
+D	day	changes from a d sound to a t sound at the end of a word woord (word, pronounced “woort”)
+E	eh	as in lesson
+F	eff	as in farmer
+G	ghay	a guttural g/ch in the back of the throat like a Scottish loch
+H	haa	as in hand
+I	ee	as in sit
+J	yay	as in you
+K	kha	as in kite
+L	ell	as in letter
+M	em	as in mug
+N	en	as in note. At the end of a word, ns are often silent or very light. The common suffix -en to make a word plural doesn’t pronounce the n.
+O	oh	as in sock or doctor
+P	pay	as in parrot
+Q	koo	as in quest. Q is only used on borrowed words and is always used together with the letter u.
+R	ehr	as in reason
+S	ess	as in set
+T	tay	as in team
+U	oo	as in food
+V	vay	Most commonly as in veal, but can take an f sound depending on the region and placement in the word.
+W	way	The Dutch w is a cross between an English w and v sound. The top teeth should touch the bottom lip without making a vibration.
+X	ex	as in six. Only used in borrowed words.
+Y	ei	as in hi. Only used in borrowed words.
+Z	zet	as in zebra
+
+A > aa (as in father, but longer). For example: kaas (cheese)
+E > ee (as in hail). For example: een (a/one)
+O > oo (as in rose). For example: boot (boat)
+U > uu (as in poor). For example: muur (wall)
+I > ie (as in sheep). For example: bier (beer)
+
+Man (man) – maan (moon)
+Les (lesson) – lees (read)
+Vis (fish) – vies (dirty/disgusting)
+Zon (sun) – zoon (son)
+Bom (bomb) – boom (tree)
+Bos (woods/forest) – boos (angry)
+
+Het is een uur. — It is one o’clock.
+Het is twee uur. — It is two o’clock.
+Het is vijf uur. — It is five o’clock.
+Het is half vier. — It is half (before) four. (3:30)
+Het is half zeven. — It is half (before) seven. (6:30)
+Het is drie voor acht uur. — It is three (minutes) before eight o’clock. (7:57)
+Het is vijf over half zes. — It is five (minutes) past half (before) six. (5:35)
+Het is kwart voor twee. — It is a quarter before two. (1:45)
+Het is kwart over negen. — It is a quarter past nine. (9:15)
+‘s morgens — in the morning
+‘s middags — in the afternoon
+‘s avonds — in the evening
+‘s nachts — at night
+Het is negentien uur. — It is nineteen o’clock. (19:00, or 7 p.m.)
+Het is zeven uur ‘s avonds. — It is seven o’clock in the evening. (7 p.m.)
+Het is half eenentwintig. — It is half (before) twenty-one. (20:30, or 8:30 p.m.)
+Het is half negen ‘s nachts. — It is half (before) nine at night. (8:30 p.m.)
+Hoe laat is het? — What time is it? (lit. How late is it?)
+het uur — hour
+de minuut — minute
+de seconde — second
+twaalf uur ‘s middags / middag — noon
+twaalf uur ‘s nachts / middernacht — midnight
+om [X] uur — at [X] o’clock
+
+maandag		dinsdag		woensdag		donderdag		vrijdag
+zaterdag		zondag		day	dag		morning	ochtend
+afternoon	middag
+evening	avond
+night	nacht
+today	vandaag
+tomorrow	morgen
+tonight	deze nacht
+yesterday	gisteren
+last night	(de) afgelopen nacht
+day after tomorrow
+overmorgen
+day before yesterday	eergisteren
+week	week
+last week	afgelopen week
+weekend	weekend
+daily	dagelijks
+weekly	wekelijks
+
+first name:voornaam, eerste naam.
+last name: achternaam, familie naam, naam
+dob: geboortedatum 			yr of birth:geboortejaar
+1993:negentien drieënnegentig
+
+1.1 Ik heb een boterham gemaakt: i made a sandwich
+1.2 Ik heb een collage van foto's gemaakt:i made a photo collage
+1.3 Ik heb een tekening gemaakt: i made a drawing
+2.1 ik zal 's avonds bellen: i will call in the evening
+2.2 ik bel je over 5minuten: i am calling you in 5minutes
+2.3 Ik belde hem gisteren: i called him yesterday
+3.1 ik zal lunchen om/ik lunch om half twee 's middags:i will do lunch at half past one in the afternoon
+4.1 ik zal studeren in het weekend: i will study on weekend
+4.2 ik studeer nu :i am studying right now 
+6.1. Ik ga de bloemen in de vaas zetten.:  I'm going to put the flowers in the vase.
+6.2. Kun je alsjeblieft de tafel voor het diner zetten?: Can you please put the table for dinner?
+6.3. Hij besloot zijn handtekening onder het contract te zetten.: He decided to put his signature on the contract.
+6.4. Na het (bood-schappen doen) moet je de boodschappen in de koelkast zetten.: After grocery shopping, you need to put the groceries in the fridge.
+

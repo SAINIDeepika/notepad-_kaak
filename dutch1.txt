@@ -1,0 +1,70 @@
+zij:she
+huur:rent
+wil:want
+krijg:get
+aardig:nice/pretty
+heerlijk:lovely/delicious/wonderful
+tja:yes/well/so
+tussen:between/among
+geweest:has been
+liever:rather/prefer
+ander:another/different/other
+zetten: put
+verhaal:story
+geeft:gives
+raam:window
+paars:purple
+liever:rather
+liefst:preferably
+moe:tired
+honger:hunger
+broodjes:sandwichs
+dorst:thirsty
+zo'n:about
+
+evryday-alledaag
+enjoy your meal- eet smakelijk
+i would like to have a vegetarian meal: ik wil graag vegetarisch eten
+5. Dag - Day
+6. Nacht - Night
+7. Ja - Yes
+12. Sorry - Sorry
+13. Alstublieft - You're welcome (formal)
+14. Hoe gaat het? - How are you?
+15. Het gaat goed - I am fine
+16. Tot ziens - Goodbye
+17. Tot later - See you later
+18. Eten - Food
+19. Drinken - Drink
+20. Water - Water
+21. Koffie - Coffee
+22. Thee - Tea
+23. Brood - Bread
+24. Kaas - Cheese
+25. Groenten - Vegetables
+26. Fruit - Fruit
+27. Vlees - Meat
+28. Vis - Fish
+29. Winkel - Shop
+30. Huis - House
+31. Auto - Car
+32. Fiets - Bicycle
+33. Trein - Train
+34. Bus - Bus
+35. Metro - Subway
+36. Ziekenhuis - Hospital
+37. Apotheek - Pharmacy
+38. School - School
+39. Werk - Work
+40. Vakantie - Vacation
+41. Familie - Family
+42. Vriend - Friend
+43. Liefde - Love
+44. Geluk - Happiness
+45. Tijd - Time
+46. Geld - Money
+47. Boek - Book
+48. Film - Movie
+49. Muziek - Music
+50. Telefoon - Phone
+51. buy -kopen

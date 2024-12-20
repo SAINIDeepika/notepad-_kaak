@@ -1,0 +1,31 @@
+-7+yrs of exp
+-decision-making
+-Leadership Skills
+-facilitation and presentation skills
+-be a talker
+-problem solver-understand immediately what is he saying
+-try to give solution immediately
+-english accent,english fluency,listening capacity to understand,hr interview prep,managerial int prep---*************
+-resume,linkedin,other portals-- update
+-apply
+
+-knowledge of basic concepts (lb, db, caching, NoSQL, etc)
+-Proven knowledge of Python is required,
+-You will be responsible for implementing cloud-based technologies.
+-built production data pipelines in the cloud, 
+-Knowledge on designing and developing applications in the Azure Cloud
+-monitor and ensure continuous optimization of the (Azure) Data Platform architecture
+-Strong experience in working with Azure in large scale environments (specifically: ADF, ADLS, Databricks, Azure Devops, etc.)
+-setting up data-lake and server-less  solutions; 
+‌-you have hands-on experience with schema,design and data modeling. 
+-experience designing systems E2E and 
+-Java/Scala will be a plus 
+-Experience with Data Warehousing and ETL/ELT pipelines 
+-setting up a modern data stack (ETL, data warehouse, DBT, reverse ETL)
+-You are driven by petabytes of our data via MySQL, Hadoop, Cassandra
+-data sets are of the highest quality
+-recognition of the importance of logging and monitoring (we currently use Splunk, OpenTelemetry)
+-contributing to open source projects
+-Experience with monitoring and observability (ELK stack)
+
+
